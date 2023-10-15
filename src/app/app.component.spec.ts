@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-user-MelodiesArchitecture'`, () => {
+  it(`should have as title 'admin-MelodiesArchitecture'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-user-MelodiesArchitecture');
+    expect(app.title).toEqual('admin-MelodiesArchitecture');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-user-MelodiesArchitecture app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('admin-MelodiesArchitecture app is running!');
   });
 });
